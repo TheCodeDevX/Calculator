@@ -16,4 +16,5 @@ This is a simple calculator app built with **React**. It can perform basic arith
 ### Clone the repository
 To get started, clone this repository to your local machine:
 ```bash
-git clone https://github.com/your-username/calculator.git
+git clone https://github.com/TheCodeDevX/Calculator.git
+```
