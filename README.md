@@ -2,6 +2,9 @@
 
 This is a simple calculator app built with **React**. It can perform basic arithmetic operations like addition, subtraction, multiplication, and division.
 
+## Deployment
+- this project is deployed on **Netlify**, you can visite here [Calculator](https://thesimplecalculat0r.netlify.app)
+
 ## Features
 - Add, subtract, multiply, and divide.
 - Clear the current input.
