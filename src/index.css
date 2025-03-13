@@ -1,0 +1,66 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+ .Shadow-inner{
+  box-shadow: inset 2px 2px 6px rgba(225, 225, 225, 0.2);
+  &:active {
+    box-shadow: inset 4px 4px 8px rgba(225, 225, 225, 0.2);
+  }
+ } 
+
+ .transition-linear {
+  transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+ }
+
+ #BG::before {
+  content: '';
+   position: absolute;
+   bottom: -20px;
+   left: 0;
+   z-index: -1;
+  background-color: #000;
+   transform: skewY(-4deg);
+   width: 100%;
+   height: 60px;
+   
+ }
+ .bg{
+  background-image: linear-gradient(to bottom, #000 0%, #000000a2 100%);
+ }
+
+  @layer utilities {
+    .SpanStyling{
+      @apply p-4 select-none px-6 rounded-3xl shadow-md shadow-black/50 bg-[#242424]
+       hover:bg-[#3b3b3b] cursor-pointer border-black/15 border-[1px] text-center
+
+    }
+
+    .AcStyling{
+      @apply select-none p-4 px-6 rounded-3xl shadow-md shadow-black/50 
+      bg-gradient-to-l from-[#242424] to-[#3b504c] font-semibold text-[#29ff9b]
+      cursor-pointer text-center flex items-center justify-center hover:from-[#29ff9b] hover:to-[#29ff9b] hover:shadow-[0px_0px_10px_1px_rgb(41,255,155,0.5)]
+       hover:text-[#242424] transition-linear
+
+    }
+
+  }
