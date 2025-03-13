@@ -6,6 +6,7 @@ This is a simple calculator app built with **React**. It can perform basic arith
 - Add, subtract, multiply, and divide.
 - Clear the current input.
 - Responsive UI for mobile and desktop.
+- Handle erros effectively and implement the necessary logic  
 
 ## Technologies Used
 - **React**: For building the user interface.
